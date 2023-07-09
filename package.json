@@ -9,7 +9,7 @@
     "public"
   ],
   "scripts": {
-    "start": "babel-node -- src/cli/bin src/cli/db.json -r routes.json"
+    "start": "babel-node -- src/cli/bin src/cli/db.json -r routes.json -p 8080"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
