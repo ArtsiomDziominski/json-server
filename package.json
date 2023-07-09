@@ -9,16 +9,7 @@
     "public"
   ],
   "scripts": {
-    "prepare": "husky install",
-    "serve": "json-server --watch src/cli/db.json --middlewares ./src/cli/middlewares.js -p 3003",
-    "test": "npm run build && cross-env NODE_ENV=test jest",
-    "start": "babel-node -- src/cli/bin src/cli/db.json -r routes.json -p 3003",
-    "lint": "eslint . --ignore-path .gitignore",
-    "fix": "npm run lint -- --fix",
-    "build": "babel src -d lib",
-    "toc": "markdown-toc -i README.md",
-    "postversion": "git push && git push --tags",
-    "prepublish": "npm test && npm run build"
+    "start": "babel-node -- src/cli/bin src/cli/db.json -r routes.json -p 3003"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
